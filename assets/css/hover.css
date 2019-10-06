@@ -1,0 +1,11 @@
+.favorites-wrap i:hover, .cart i:hover{
+    color: pink;
+}
+body a:hover{
+    text-decoration: none;
+    color: #111;
+}
+
+/* Modal Zoom Effect */
+.modal.fade .modal-dialog.modal-dialog-zoom {-webkit-transform: translate(0,0)scale(.5);transform: translate(0,0)scale(.5);}
+.modal.show .modal-dialog.modal-dialog-zoom {-webkit-transform: translate(0,0)scale(1);transform: translate(0,0)scale(1);}

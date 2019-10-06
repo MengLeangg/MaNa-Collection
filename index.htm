@@ -1,0 +1,159 @@
+<!-- <?php
+include 'assets/admin/lib/functions.php';
+//connection();
+
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MaNa Collection</title>
+
+    <!-- link to FontAwsome -->
+    <script src="https://kit.fontawesome.com/23214e69cc.js"></script>
+    <!-- link to logo title -->
+    <link rel="shortcut icon" href="assets/image/logo.png">
+    <!-- link to css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/hover.css">
+    <!-- link to bootstrap 4 css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+
+<body>
+    <!-- start div promotion bar -->
+    <div class="promo-bar">
+        <div class="fixed-width">
+            <div class="text-wrap">
+                Free Shipping Over <span class="number-font">$59</span> & Free Returns!
+            </div> 
+        </div>
+    </div>
+    <!-- end div promotion bar -->
+    <header>
+        <div class="header desktop">
+            <div class="fixed-header">
+                <div class="main-heading fixed-width">
+                    <div class="logo"><span>MaNa Collection</span></div>
+                    <div class="search desktop">
+                        <i class="fas fa-search"></i>
+                        <form class="searchform" action="/search" method="GET">
+                            <input id="mainsearch" type="text" name="   search" class="search mainsearch" value="" placeholder="skirt" autocomplete="off">
+                        </form>
+                    </div>
+                    <div class="header-fill"></div>
+                    <div class="user-option">
+                        <div class="profile"><a class="header-signin" data-toggle="modal" data-target="#login-register-modal">Sign In / Register</a></div>
+                        <div class="favorites-wrap"><i class="fas fa-heart"></i></div>
+                        <div class="cart"><i class="fas fa-shopping-cart"></i></div>
+                    </div>  
+                </div>
+                <nav>
+                    <div class="sub-nav fixed-width">
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="sitenav">
+                                    <li><a href="">Women</a></li>
+                                    <li><a href="">Men</a></li>
+                                    <li><a href="">New In</a></li>
+                                    <li><a href="">Beauty</a></li>
+                                    <li><a href="">Kids</a></li>
+                                    <li><a href="">Jewelry</a></li>
+                                    <li><a href="">Accesories</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Start Modal login -->
+  <div class="modal fade" id="login-register-modal" tabindex="-1" role="dialog" aria-labelledby="login-register-modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-zoom" role="document">
+      <div class="modal-content">
+          <div class="top-area">
+              <div class="title">
+                  <span id="signin" class="signin-title active">Sign In</span>
+                  <span id="signup" class="signup-title">Sign Up</span>
+              </div>
+              <!-- Sign In Panel -->
+                    <div class="signin-panel">
+                            <div class="subtitle">Welcome back!</div>
+                            <form method="POST">
+                                  <div class="signin-wrapper">
+                                          <input class="input" type="email" name="email" placeholder="example@gmail.com" required>
+                                          <input class="input" type="password" name="password" placeholder="Password" required>
+                                      <div class="submit-wrapper">
+                                          <div class="login-check">
+                                              <input class="global-checkbox" type="checkbox" value="1" checked>
+                                              <span>Remember Me</span>
+                                          </div>
+                                          <button type="submit" class="black log-in">Sign In</button>
+                                          <p class="forgot-password"><a href="" title="Forgot your password?">Forgot your password?</a></p>
+                                      </div>
+                                </div>
+                            </form>
+                            <div class="or-divider">
+                                <div class="line left"></div>
+                                <div class="center">or, sign in with...</div>
+                                <div class="line right"></div>
+                            </div>
+                            <div class="social-login">
+                                <div class="login-to left">
+                                  <button class="btn-social" type="button"><div class="social-logo-col facebook"></div>Facebook</button>
+                                </div>
+                                <div class="login-to right">
+                                  <button class="btn-social" type="button"><div class="social-logo-col google"></div>Google</button>
+                                </div>
+                            </div>
+                          </div>
+                          <!-- Sign In Panel -->
+                          <!-- Sign Up Panel -->
+                          <div class="signup-panel">
+                            <div class="subtitle">Welcome back!</div>
+                            <form method="POST">
+                                  <div class="signin-wrapper">
+                                        <input class="input" type="text" name="username" placeholder="User name" required>
+                                        <input class="input" type="text" name="phone" placeholder="Phone Number" required>
+                                        <input class="input" type="email" name="email" placeholder="example@gmail.com" required>
+                                        <input class="input" type="password" name="password" placeholder="Password" required>
+                                      <div class="submit-wrapper">
+                                          <button type="submit" class="black log-in">Sign Up</button>
+                                      </div>
+                                </div>
+                            </form>
+                            <div class="or-divider">
+                                <div class="line left"></div>
+                                <div class="center">or, sign up with...</div>
+                                <div class="line right"></div>
+                            </div>
+                            <div class="social-login">
+                                <div class="login-to left">
+                                  <button class="btn-social" type="button"><div class="social-logo-col facebook"></div>Facebook</button>
+                                </div>
+                                <div class="login-to right">
+                                  <button class="btn-social" type="button"><div class="social-logo-col google"></div>Google</button>
+                                </div>
+                            </div>
+                          </div>
+              <!-- Sign Up Panel -->
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal login -->
+    <!-- Optional Javascript -->
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/function.js"></script>
+</body>
+
+
+</html>
